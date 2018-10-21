@@ -76,12 +76,13 @@ Type "help", "copyright", "credits" or "license" for more information.
     - 使用 postData 发送 post 请求
         ```python
         request.urlopen(req, data=postData.encode('utf-8'))
-        ```      
+        ```
     - 得到请求状态
         ```python
         response.status
-        ```        
+        ```
     - 得到服务器的类型
         ```python
         response.reason
         ```
+
