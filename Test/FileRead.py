@@ -53,6 +53,7 @@ for page in doc.get_pages():
     # 使用聚合器来接收内容
     layout = device.get_result()
     for out in layout:
+        # 排除无法显示的（如图片）内容
         if hasattr(out, 'get_text'):
             print(out.get_text())
 
